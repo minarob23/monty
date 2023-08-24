@@ -1,7 +1,7 @@
 #include "monty.h"
 global_t gl;
 /**
- * _push - function to push
+ * _push - push the stack
  * @stack: stack
  * @line_number: line
  * Return: void
