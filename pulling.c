@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * _pall - prints all the elements of list stack_t.
+ * _pall - pull the stack
  * @stack: head
  * @line_number: line_number
  * Return: void
