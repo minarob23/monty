@@ -71,7 +71,7 @@ void Add(stack_t **stack, unsigned int line_number);
 void _nop(stack_t **stack, unsigned int line_number);
 void _sub(stack_t **stack, unsigned int line_number);
 void Divide(stack_t **stack, unsigned int line_number);
-void _mul(stack_t **stack, unsigned int line_number);
+void Mul(stack_t **stack, unsigned int line_number);
 void Mod(stack_t **stack, unsigned int line_number);
 void _pchar(stack_t **stack, unsigned int line_number);
 void _rotl(stack_t **stack, unsigned int line_number);
