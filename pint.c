@@ -2,7 +2,7 @@
 
 global_t gl;
 /**
- * _pint - prints the value at the top of the stack, followed by a new line.
+ * _pint - print the stack
  * @stack: stack head
  * @line_number: line num
  * Return: void
