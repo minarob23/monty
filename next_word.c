@@ -1,7 +1,7 @@
 #include "monty.h"
 global_t gl;
 /**
- * next_word - function to set global variable
+ * next_word - set next word variable
  * @word: buffer
  * Return: void
  */
