@@ -2,7 +2,7 @@
 
 global_t gl;
 /**
- * _nop - The opcode nop doesnt do anything.
+ * _nop - nothing
  * @stack: stack head
  * @line_number: line num
  * Return: void
