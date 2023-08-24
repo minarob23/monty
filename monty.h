@@ -81,7 +81,7 @@ void add_nodo(stack_t **stack, int a);
 void errorargv(void);
 void errorunk(unsigned int line, char *aux);
 void Get_Command(char *buffer, int line, stack_t **a, FILE *fd);
-void free_list(stack_t *head);
+void Free_List(stack_t *head);
 
 
 #endif
