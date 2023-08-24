@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * _rotr - function to push
+ * _rotr - another push the stack
  * @stack: stack
  * @line_number: line
  * Return: void
