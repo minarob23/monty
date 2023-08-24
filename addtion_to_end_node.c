@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * add_dnodeint_end - adds a new node at the end
+ * add_dnodeint_end - add node to the end
  * @head: head
  * @n: value new node
  * Return: new node adress
