@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * errounk - asdi
+ * errounk - asdi errorsunk
  * @line: line
  * @aux: aux
  */
