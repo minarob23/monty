@@ -12,7 +12,7 @@ FILE *read_textfile(char *filename)
 
 	if (!fd)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", filename);
+		vprintf(STDERR_FILENO, "Error: Can't open file %s\n", filename);
 		exit(EXIT_FAILURE);
 	}
 	return (fd);
