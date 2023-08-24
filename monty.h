@@ -58,7 +58,7 @@ typedef struct instruction_s
 
 FILE *read_textfile(char *filename);
 void next_word(char *word);
-int belongs(char *aux);
+int Belong(char *aux);
 int Empty(char *buffer);
 int execute(char *aux, stack_t **stack, unsigned int line);
 stack_t *add_node_end(stack_t **head, int n);
