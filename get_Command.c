@@ -1,7 +1,7 @@
 #include "monty.h"
 global_t gl;
 /**
- * get_command - geT_command
+ * get_command - get_to_command
  * @buffer: buffer
  * @line: line
  * @a: stack
