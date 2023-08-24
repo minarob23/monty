@@ -78,7 +78,7 @@ void _rotl(stack_t **stack, unsigned int line_number);
 void _rotr(stack_t **stack, unsigned int line_number);
 void _pstr(stack_t **stack, unsigned int line_number);
 void add_nodo(stack_t **stack, int a);
-void erroargv(void);
+void errorargv(void);
 void errounk(unsigned int line, char *aux);
 void get_command(char *buffer, int line, stack_t **a, FILE *fd);
 void free_list(stack_t *head);
