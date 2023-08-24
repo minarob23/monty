@@ -2,7 +2,7 @@
 
 global_t gl;
 /**
- * _add - adds the top two elements of the stack.
+ * _add - adds two elements 
  * @stack: stack head
  * @line_number: line num
  * Return: void
