@@ -1,7 +1,7 @@
 #include "monty.h"
 global_t gl;
 /**
- * main - create an interpreter Monty ByteCodes files
+ * main - main function to create an interpreter Monty ByteCodes files
  * @argc: arg count
  * @argv: args
  * Return: always 0

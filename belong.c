@@ -1,7 +1,7 @@
 #include "monty.h"
 global_t gl;
 /**
- * belongs - check aux belongs or not
+ * belongs - check if aux belongs to words admited
  * @aux: word
  * Return: 1 if belongs, else 0
  */

@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * errounk - know the errors
+ * errounk - asdi
  * @line: line
  * @aux: aux
  */
@@ -14,7 +14,7 @@ void errounk(unsigned int line, char *aux)
 			break;
 	i++;
 	}
-	vprintf(2, "L%u: unknown instruction %s\n", line, aux);
+	dprintf(2, "L%u: unknown instruction %s\n", line, aux);
 	aux[i] = ' ';
 	free(aux);
 	exit(EXIT_FAILURE);

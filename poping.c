@@ -3,7 +3,7 @@
 global_t gl;
 
 /**
- * _pop - clear the stack.
+ * _pop - removes the top element of the stack.
  * @stack: stack head
  * @line_number: line num
  * Return: void

@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * execute - execute that belongs
+ * execute - execute function that belongs to a opcode
  * @aux: opcode
  * @stack: stack
  * @line: line

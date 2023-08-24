@@ -2,7 +2,7 @@
 
 global_t gl;
 /**
- * _swap - swapping 2 elements of the stacks
+ * _swap - swaps the top two elements of the stack.
  * @stack: stack head
  * @line_number: line num
  * Return: void

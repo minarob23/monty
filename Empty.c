@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- * isEmpty - verify if buffer empty
+ * isEmpty - function to verify if buffer is empty
  * @buffer: buffer
- * Return: 1 empty, 0 not
+ * Return: 1 if Empry, 0 if not
  */
 int isEmpty(char *buffer)
 {
