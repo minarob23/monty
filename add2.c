@@ -2,7 +2,7 @@
 
 global_t gl;
 /**
- * _mul - adds the top two elements of the stack.
+ * _mul - add mulit two elements
  * @stack: stack head
  * @line_number: line num
  * Return: void
