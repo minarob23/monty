@@ -1,45 +1,34 @@
 #include "monty.h"
-bus_t bus = {NULL, NULL, NULL, 0};
+global_t gl;
 /**
-* main - monty code interpreter
-* @argc: number of arguments
-* @argv: monty file location
-* Return: 0 success
-*/
-int main(int argc, char *argv[])
+ * main - create an interpreter Monty ByteCodes files
+ * @argc: arg count
+ * @argv: args
+ * Return: always 0
+ */
+int main(int argc, char **argv)
 {
-	char *content;
-	FILE *file;
-	size_t size = 0;
-	ssize_t read_line = 1;
-	stack_t *stack = NULL;
-	unsigned int counter = 0;
+	char *buffer;
+	FILE *fd;
+	int line = 0;
+	size_t l = 1024, gt = 0;
+	stack_t *a = NULL;
 
+	gl.mode = 's';
 	if (argc != 2)
+		errorargv();
+	fd = read_textfile(argv[1]);
+	buffer = malloc(1024);
+	while (1)
 	{
-		fprintf(stderr, "USAGE: monty file\n");
-		exit(EXIT_FAILURE);
+		gt = getline(&buffer, &l, fd);
+		if (gt == (size_t) -1)
+			break;
+		line++;
+		buffer[gt - 1] = '\0';
+		if (isEmpty(buffer) == 0 && buffer[0] != '\0')
+			get_command(buffer, line, &a, fd);
 	}
-	file = fopen(argv[1], "r");
-	bus.file = file;
-	if (!file)
-	{
-		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
-		exit(EXIT_FAILURE);
-	}
-	while (read_line > 0)
-	{
-		content = NULL;
-		read_line = getline(&content, &size, file);
-		bus.content = content;
-		counter++;
-		if (read_line > 0)
-		{
-			execute(content, &stack, counter, file);
-		}
-		free(content);
-	}
-	free_stack(stack);
-	fclose(file);
-return (0);
+	free(buffer), free_list(a), fclose(fd);
+	return (0);
 }
