@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * erroargv - asd
+ * erroargv - asd errorsargv
  */
 void erroargv(void)
 {
