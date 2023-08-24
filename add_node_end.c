@@ -3,7 +3,7 @@
  * add_node_end - add a new node at the end
  * @head: head
  * @n: value new node
- * Return: new node adress
+ * Return: new node address
  */
 stack_t *add_node_end(stack_t **head, int n)
 {
