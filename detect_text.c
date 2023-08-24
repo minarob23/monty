@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * read_textfile - reads a text file
+ * read_textfile - read to detect the text
  * @filename: pointer to name file
  * Return: the buffer with content of the file
  */
