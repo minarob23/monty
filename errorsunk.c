@@ -14,7 +14,7 @@ void errounk(unsigned int line, char *aux)
 			break;
 	i++;
 	}
-	dprintf(2, "L%u: unknown instruction %s\n", line, aux);
+	vprintf(2, "L%u: unknown instruction %s\n", line, aux);
 	aux[i] = ' ';
 	free(aux);
 	exit(EXIT_FAILURE);
