@@ -1,9 +1,9 @@
 #include "monty.h"
 global_t gl;
 /**
- * belongs - check if aux belongs to words admited
+ * belongs - check aux belongs
  * @aux: word
- * Return: 1 if belongs, else 0
+ * Return: 1 belongs, 0 not
  */
 int belongs(char *aux)
 {
